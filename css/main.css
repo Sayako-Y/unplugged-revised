@@ -421,15 +421,80 @@ aside p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/*Tablet styles here */
+@media only screen and (min-width: 768px) {
+  /* General Styles */
+  .content-wrapper {
+    width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header Styles */
+
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+  header img {
+    width: 30%;
+  }
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  nav ul li a {
+    color: #e2e3ed;
+  }
+
+  footer .contact {
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  footer h4 {
+    margin-bottom: 40px;
+  }
+
+  footer .social {
+    margin-bottom: 100px;
+  }
+
+  /* Hero Area Styles */
+  .hero-area h1 {
+    margin: 0;
+    width: 82%;
+  }
+
+  /* Aside Styles */
+  aside .content-wrapper {
+    margin: 50px 0;
+  }
+
+  /* Features Styles */
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  /* Reviews Styles */
+  .reviews h2 {
+    width: 75%;
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* Desktop styles here */
+@media screen and (min-width: 1200px) {
 }
 
 /* ==========================================================================
