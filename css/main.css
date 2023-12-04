@@ -94,6 +94,7 @@ html {
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
+  margin: 50px 0;
 }
 
 /*---------------- Base Header - Footer Styles*----------------*/
@@ -120,7 +121,7 @@ header figure {
   margin: 0;
 }
 
-header .header-divider {
+.header-divider {
   width: 100%;
   margin: 10px 0 20px 0;
   height: 1px;
@@ -146,13 +147,24 @@ footer {
   align-items: center;
 }
 
-footer h4 {
-  font-size: 1.125em;
-}
-
 footer .content-wrapper {
   width: 60%;
   margin: 50px 0;
+}
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer h4 {
+  font-size: 1.125em;
+  margin: 20px 0;
+}
+
+footer .contact p {
+  margin: 0;
+}
+footer .social {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -164,6 +176,10 @@ footer .social-icons {
 footer .social-icons p {
   display: flex;
   justify-content: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 /* Header */
@@ -215,6 +231,18 @@ aside .content-wrapper {
 
 aside h3 {
   font-size: 1.125em;
+  margin: 20px 0;
+}
+
+input {
+  padding: 1em;
+  margin-bottom: 20px;
+}
+input {
+}
+
+aside p {
+  margin-bottom: 30px;
 }
 
 /* Features */
@@ -224,6 +252,10 @@ aside h3 {
   background: url("../img/unplugged-retreat-features.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.features h2 {
+  margin-bottom: 60px;
 }
 
 .features .features-items {
@@ -238,7 +270,8 @@ aside h3 {
 }
 
 .features article {
-  width: 60%;
+  width: 64%;
+  margin: 30px 0;
 }
 
 /*  Reviews */
@@ -248,8 +281,13 @@ aside h3 {
   background-color: #2a423a;
 }
 
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
 .reviews h3 {
-  width: 95%;
+  width: 52%;
+  margin: 20px 0;
 }
 
 /* ==========================================================================
@@ -266,6 +304,10 @@ aside h3 {
   justify-content: center;
 }
 
+.contact-content p {
+  margin: 0;
+}
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -280,6 +322,15 @@ aside h3 {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================
