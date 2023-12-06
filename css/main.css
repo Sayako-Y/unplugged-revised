@@ -425,12 +425,11 @@ aside p {
 @media only screen and (min-width: 768px) {
   /* General Styles */
   .content-wrapper {
-    width: 640px;
+    max-width: 640px;
     margin: 100px 0;
   }
 
   /* Header Styles */
-
   header {
     padding: 33px 0;
   }
@@ -438,6 +437,7 @@ aside p {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .header-divider {
@@ -456,6 +456,16 @@ aside p {
 
   nav ul li a {
     color: #e2e3ed;
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   footer .contact {
@@ -478,8 +488,26 @@ aside p {
   }
 
   /* Aside Styles */
+  aside {
+    height: 300px;
+  }
   aside .content-wrapper {
     margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    margin: 0;
+    width: 40%;
+  }
+
+  aside .form input {
+    width: 100%;
   }
 
   /* Features Styles */
@@ -487,9 +515,73 @@ aside p {
     margin-bottom: 20px;
   }
 
+  .features-items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .features article {
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+    /* justify-content: space-around; */
+  }
+
+  .features .fontawesome-icons {
+    margin-bottom: 30px;
+  }
+
+  .features .features-description {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+  }
+
   /* Reviews Styles */
   .reviews h2 {
     width: 75%;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+  .mission h2 {
+    margin-bottom: 20px;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mission-content p {
+    width: 45%;
+  }
+
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq h2 {
+    width: 80%;
+  }
+
+  .faq-content {
+    width: 45%;
   }
 }
 
