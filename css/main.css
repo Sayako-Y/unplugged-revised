@@ -86,10 +86,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* General Styles */
 * {
   color: #e2e3ed;
-  font-size: 1em;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
 }
 
 .content-wrapper {
