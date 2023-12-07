@@ -86,15 +86,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html {
+* {
   color: #e2e3ed;
   font-size: 1em;
+  font-family: "Open Sans", sans-serif;
 }
 
 .content-wrapper {
-  outline: 3px dotted red;
+  /* outline: 3px dotted red; */
   width: 90%;
   margin: 50px 0;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.125;
 }
 
 /*---------------- Base Header - Footer Styles*----------------*/
@@ -130,6 +136,8 @@ header figure {
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: bold;
 }
 
 header nav ul {
@@ -157,11 +165,14 @@ footer .contact {
 
 footer h4 {
   font-size: 1.125em;
+  font-weight: 500;
   margin: 20px 0;
+  font-family: "Poppins", sans-serif;
 }
 
 footer .contact p {
   margin: 0;
+  font-style: normal;
 }
 footer .social {
   margin-bottom: 50px;
@@ -190,6 +201,7 @@ img {
 
 header figure {
   margin: 0;
+  text-align: center;
 }
 
 header h1 {
@@ -214,6 +226,10 @@ nav ul li {
 
 .hero-area h1 {
   width: 90%;
+  font-size: 2.25em;
+  line-height: 1.194;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Aside */
@@ -230,15 +246,31 @@ aside .content-wrapper {
 }
 
 aside h3 {
-  font-size: 1.125em;
   margin: 20px 0;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+.form h3 {
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 input {
   padding: 1em;
   margin-bottom: 20px;
+  color: #2a423a;
 }
-input {
+
+input[type="text"] {
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type="button"] {
+  background-color: #2a423a;
+  color: #e2e3ed;
+  text-transform: capitalize;
 }
 
 aside p {
@@ -256,6 +288,9 @@ aside p {
 
 .features h2 {
   margin-bottom: 60px;
+  font-size: 1.875em;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 .features .features-items {
@@ -267,6 +302,7 @@ aside p {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features article {
@@ -283,11 +319,19 @@ aside p {
 
 .reviews h2 {
   margin-bottom: 40px;
+  font-size: 1.875em;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.875em;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
 }
 
 .reviews h3 {
   width: 52%;
   margin: 20px 0;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 /* ==========================================================================
@@ -297,15 +341,29 @@ aside p {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+}
+
+.mission h2 {
+  font-size: 1.875em;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
+  font-size: 1.875em;
+}
+
+.contact-content h4 {
+  font-size: 0.6em;
+  font-weight: 500;
 }
 
 .contact-content p {
   margin: 0;
+  font-size: 0.467em;
+  line-height: 1.2857;
 }
 
 /* ==========================================================================
@@ -315,6 +373,7 @@ aside p {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -327,10 +386,16 @@ aside p {
 
 .faq h2 {
   margin-bottom: 40px;
+  font-size: 1.875em;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq h4 {
+  font-size: 1.125em;
 }
 
 /* ==========================================================================
@@ -475,6 +540,11 @@ aside p {
 
   footer h4 {
     margin-bottom: 40px;
+    font-size: 1.5em;
+  }
+
+  footer p {
+    line-height: 1.2857;
   }
 
   footer .social {
@@ -482,9 +552,14 @@ aside p {
   }
 
   /* Hero Area Styles */
+  .hero-area {
+    height: 600px;
+  }
+
   .hero-area h1 {
     margin: 0;
     width: 82%;
+    font-size: 3em;
   }
 
   /* Aside Styles */
@@ -500,6 +575,11 @@ aside p {
     flex-direction: row;
   }
 
+  aside h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     margin: 0;
@@ -513,6 +593,8 @@ aside p {
   /* Features Styles */
   .features h2 {
     margin-bottom: 20px;
+    font-size: 2.25em;
+    line-height: 1.333;
   }
 
   .features-items {
@@ -559,14 +641,24 @@ aside p {
 
   .mission h2 {
     margin-bottom: 20px;
+    font-size: 2.25em;
+    line-height: 1.333;
   }
-
-  .mission-content {
+  .contact-section h2 {
+    font-size: 1.2em;
+    line-height: 1.333;
+    width: 80%;
+  }
+  .contact-content {
     display: flex;
     justify-content: space-between;
   }
-  .mission-content p {
-    width: 45%;
+  .contact-content h4 {
+    font-size: 0.8em;
+  }
+
+  .contact-content p {
+    width: 100%;
   }
 
   /* ==========================================================================
@@ -580,13 +672,123 @@ aside p {
     width: 80%;
   }
 
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 1.125;
+  }
+
   .faq-content {
     width: 45%;
   }
 }
+/*Desktop styles here */
+@media only screen and (min-width: 1200px) {
+  /* General Styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
 
-/* Desktop styles here */
-@media screen and (min-width: 1200px) {
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  footer .contact h4,
+  footer .social h4 {
+    font-size: 1.875em;
+  }
+
+  /* Hero Area Styles */
+  .hero-area {
+    height: 600px;
+  }
+  .hero-area h1 {
+    width: 70%;
+    font-size: 1.25em;
+  }
+  .form-description h3,
+  .form h3 {
+    font-size: 1.875em;
+  }
+
+  /* Aside Styles */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features Styles */
+  .features h2 {
+    width: 90%;
+    font-size: 2.25em;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .features .features-description {
+    width: 20%;
+  }
+
+  /* Reviews Styles */
+  .reviews h2 {
+    margin-bottom: 50px;
+    width: 73%;
+    font-size: 2.25em;
+  }
+
+  .reviews h3 {
+    font-size: 1.875em;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+  .mission h2 {
+    width: 90%;
+    font-size: 3em;
+  }
+
+  .contact-section h2 {
+    width: 84%;
+  }
+
+  .contact-content div {
+    width: 33%;
+  }
+
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
 }
 
 /* ==========================================================================
