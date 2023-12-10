@@ -114,6 +114,14 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 .content-wrapper {
   /* outline: 3px dotted red; */
   width: 90%;
@@ -146,6 +154,7 @@ header .content-wrapper {
 }
 
 header figure {
+  width: 60%;
   margin: 0;
 }
 
@@ -238,7 +247,7 @@ nav ul li {
 
 /* Hero Area */
 .hero-area {
-  background: url("../img/unplugged-retreat.jpg");
+  background: url("../img/unplugged-retreat.jpg") no-repeat #333;
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -545,7 +554,7 @@ aside p {
   .header-divider {
     display: none;
   }
-  header img {
+  header figure {
     width: 30%;
   }
   header nav {
