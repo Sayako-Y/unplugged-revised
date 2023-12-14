@@ -218,6 +218,15 @@ footer .social-icons {
 footer .social-icons p {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: #527158;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border-radius: 50%;
+}
+
+foorer .social-iconsp i {
 }
 
 footer .copyright {
