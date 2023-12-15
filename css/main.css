@@ -154,8 +154,12 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 60%;
   margin: 0;
+}
+
+header a {
+  display: flex;
+  justify-content: center;
 }
 
 .header-divider {
@@ -235,7 +239,7 @@ footer .copyright {
 
 /* Header */
 
-img {
+header img {
   width: 60%;
 }
 
@@ -289,6 +293,10 @@ aside h3 {
   margin: 20px 0;
   font-size: 1.125em;
   font-weight: 500;
+}
+
+.form {
+  margin-top: 0;
 }
 
 .form h3 {
@@ -429,6 +437,10 @@ aside p {
   justify-content: center;
   background-color: #2a423a;
   font-size: 1.875em;
+}
+
+.contact-section h2 {
+  font-size: 1em;
 }
 
 .contact-content h4 {
